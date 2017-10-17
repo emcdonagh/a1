@@ -8,9 +8,6 @@ Template: twentyseventeen
 Version: 0.1.0
 */
 
-p {
-    background-color:green;
-}
 /*removes Proudly powered by Wordpress line*/
 .site-info {display:none;}
 
@@ -20,3 +17,5 @@ label {font-weight: 600;}
 /*changes colour on contact form button*/
 button, input[type="button"], input[type="submit"] {
     background-color: #666;}
+
+    .site-title {opacity: 3;}
