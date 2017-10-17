@@ -18,18 +18,22 @@ label {font-weight: 600;}
 button, input[type="button"], input[type="submit"] {
     background-color: #666;}
 
-    /* changes title so that it fades in on hover instead of out */
+    /* changes title so that it fades in on hover instead of out... turns title to serif */
     .site-branding a:hover,
     .site-branding a:focus {
         opacity: 1;
     }
-    
+
    .site-title {opacity: 0.6;}
 
     .site-title,
     .site-title a {
+        font-size: 1.8em;
+        font-family:"impact"; 
         color: #222;
         opacity: 0.7; /* Prevent opacity from changing during selective refreshes in the customize preview */
     }
+
+
 
  
