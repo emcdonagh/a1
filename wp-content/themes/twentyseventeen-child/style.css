@@ -35,5 +35,16 @@ button, input[type="button"], input[type="submit"] {
     }
 
 
-
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        color: hotpink;
+        font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-size: 15px;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.66;
+    }
  
