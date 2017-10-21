@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+
 <?php
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {

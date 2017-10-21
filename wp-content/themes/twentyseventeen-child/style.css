@@ -8,6 +8,7 @@ Template: twentyseventeen
 Version: 0.1.0
 */
 
+
 /*removes Proudly powered by Wordpress line*/
 .site-info {display:none;}
 
@@ -28,8 +29,8 @@ button, input[type="button"], input[type="submit"] {
 
     .site-title,
     .site-title a {
-        font-size: 1.8em;
-        font-family:"impact"; 
+        font-size: 1.6em;
+        font-family: 'Walter Turncoat', cursive;; 
         color: #222;
         opacity: 0.7; /* Prevent opacity from changing during selective refreshes in the customize preview */
     }
@@ -47,7 +48,10 @@ button, input[type="button"], input[type="submit"] {
         font-weight: 400;
         line-height: 1.66;
     }
- 
+
+
+
+
 /* changes site background & media links colour to light grey */
     .twentyseventeen-front-page .site-content,
     body, .social-navigation a,
@@ -67,3 +71,5 @@ button, input[type="button"], input[type="submit"] {
       background-color: #333;
       color: white;
   }
+ 
+  
