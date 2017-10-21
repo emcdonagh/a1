@@ -40,7 +40,7 @@ button, input[type="button"], input[type="submit"] {
     input,
     select,
     textarea {
-        color: hotpink;
+        color:#666;
         font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
         font-size: 15px;
         font-size: 0.9375rem;
@@ -48,3 +48,22 @@ button, input[type="button"], input[type="submit"] {
         line-height: 1.66;
     }
  
+/* changes site background & media links colour to light grey */
+    .twentyseventeen-front-page .site-content,
+    body, .social-navigation a,
+    .site-content-contain {
+        background-color: rgb(245, 245, 245);
+    }
+/* changes site nav colour to light-dark grey */
+   .navigation-top, .site-footer
+   {background-color:rgb(218, 226, 228);}
+   
+   /* changes media link colour and shape */
+  .social-navigation a {border-radius: 10px; color: #333;}
+
+  /* colours nav links on hover to inverse */
+  .social-navigation a:hover,
+  .social-navigation a:focus {
+      background-color: #333;
+      color: white;
+  }
