@@ -93,9 +93,10 @@ button, input[type="button"], input[type="submit"] {
 
 .navigation-top {
     background: rgba(252, 251, 251, 0.842);
-    border-bottom: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,0); /* gets rid of border..?*/
     border-top: 1px solid rgba(0,0,0,0);}
 
+/* makes top nav translucent*/
     .custom-header {
          position: initial; 
     }
@@ -104,8 +105,42 @@ button, input[type="button"], input[type="submit"] {
         text-transform: uppercase;
     }
 
+    /* changes the read more links*/
     .more-link {
         color: rgb(77, 57, 57);
         text-decoration: none;
         font-weight: 800;
+    }
+
+
+    .entry-title a,
+     .entry-meta a,
+      .page-links a, 
+      .page-links a .page-number,
+       .entry-footer a,
+        .entry-footer .cat-links a,
+         .entry-footer .tags-links a,
+          .edit-link a,
+           .post-navigation a,
+            .logged-in-as a,
+             .comment-navigation a,
+              .comment-metadata a,
+               .comment-metadata a.comment-edit-link,
+                .comment-reply-link,
+                 a .nav-title,
+                 
+            .pagination a,
+             .comments-pagination a,
+              .site-info a, 
+              .widget .widget-title a,
+               .widget ul li a,
+                .site-footer .widget-area ul li a,
+                 .site-footer .widget-area ul li a {
+        -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+        text-decoration: none;
+        -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+        transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+        transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+        transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
     }
