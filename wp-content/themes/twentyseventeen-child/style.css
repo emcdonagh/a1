@@ -30,17 +30,14 @@ button, input[type="button"], input[type="submit"] {
     .site-title,
     .site-title a {
         text-transform: none;
-        font-size: 1.6em;
+        font-size: 1.8em;
         font-family: 'Alegreya Sans SC', sans-serif; 
-        font-weight: 300;
+        font-weight: 100;
         color: #222;
         opacity: 0.7; /* Prevent opacity from changing during selective refreshes in the customize preview */
     }
 
     h1,
-    h2,
-    h3,
-    h4,
     h5,
     h6,
     nav {
@@ -49,7 +46,12 @@ button, input[type="button"], input[type="submit"] {
         font-weight: 500;
     }
 
-
+    h2,
+    h3,
+    h4
+     {
+         font-weight: 800;
+        }
 
     body,
     button,
@@ -58,7 +60,7 @@ button, input[type="button"], input[type="submit"] {
     textarea
     {
     
-        font-family:'Alegreya', serif;
+        font-family:'Alegreya sans SC', sans-serif;
         font-weight: 400; 
         
     }
@@ -113,34 +115,34 @@ button, input[type="button"], input[type="submit"] {
     }
 
 
-    .entry-title a,
-     .entry-meta a,
-      .page-links a, 
-      .page-links a .page-number,
-       .entry-footer a,
-        .entry-footer .cat-links a,
-         .entry-footer .tags-links a,
-          .edit-link a,
-           .post-navigation a,
-            .logged-in-as a,
-             .comment-navigation a,
-              .comment-metadata a,
-               .comment-metadata a.comment-edit-link,
-                .comment-reply-link,
-                 a .nav-title,
-                 
-            .pagination a,
-             .comments-pagination a,
-              .site-info a, 
-              .widget .widget-title a,
-               .widget ul li a,
-                .site-footer .widget-area ul li a,
-                 .site-footer .widget-area ul li a {
-        -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
-        box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
-        text-decoration: none;
-        -webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-        transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-        transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
-        transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
-    }
+   .content-area a {color:rgb(136, 96, 104);
+text-decoration:none;       
+}
+
+.entry-title a,
+ .entry-meta a,
+ .page-links a, 
+ .page-links a .page-number,
+  .entry-footer a,
+.entry-footer .cat-links a,
+ .entry-footer .tags-links a,
+  .edit-link a, .post-navigation a,
+  .logged-in-as a,
+   .comment-navigation a,
+    .comment-metadata a,
+     .comment-metadata a.comment-edit-link, 
+     .comment-reply-link, 
+     a .nav-title, 
+     .pagination a, 
+     .comments-pagination a,
+      .site-info a, 
+      .widget .widget-title a, 
+      .widget ul li a,
+       .site-footer .widget-area ul li a,
+        .site-footer .widget-area ul li a 
+        {
+            color:#333;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+   }
