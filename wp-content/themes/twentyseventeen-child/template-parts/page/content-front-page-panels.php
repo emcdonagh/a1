@@ -1,3 +1,17 @@
+<?php
+/**
+ * Template part for displaying pages on front page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
+
+global $twentyseventeencounter;
+
+?>
+
 <article id="panel<?php echo $twentyseventeencounter; ?>" <?php post_class( 'twentyseventeen-panel ' ); ?> >
 
 	<?php if ( has_post_thumbnail() ) :
