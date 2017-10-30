@@ -34,9 +34,9 @@ button, input[type="button"], input[type="submit"] {
         font-family: 'Alegreya Sans SC', sans-serif; 
         font-weight: 100;
         color: #222;
-        opacity: 0.7; /* Prevent opacity from changing during selective refreshes in the customize preview */
+        opacity: 0.7; /* NOTE FROM ORIGINAL SCRIPT: Prevent opacity from changing during selective refreshes in the customize preview */
     }
-
+/* font, weight, and colour changes for three seperate sections */
     h1,
     h6,
     nav {
@@ -48,10 +48,10 @@ button, input[type="button"], input[type="submit"] {
     h2,
     h3,
     h4,
-    h5,
+    h5
      {
-         font-weight: 700;
-         color:rgb(82, 66, 44);
+         font-weight: 100;
+         color:rgb(253, 253, 252);
         }
 
     body,
@@ -69,12 +69,13 @@ button, input[type="button"], input[type="submit"] {
 
 
 
-/* changes site background & media links colour to light grey */
-    .twentyseventeen-front-page .site-content,
-    body, .social-navigation a,
-    .site-content-contain {
-        background-color: rgb(245, 245, 245);
-    }
+/* changes site background & media links to tiled background */
+.twentyseventeen-front-page .site-content,
+ body,
+  .social-navigation a,
+   .site-content-contain {
+    background-image: url("patterns/billie_holiday.png");
+}
 /* changes site nav colour to light-dark grey */
    .navigation-top, .site-footer
    {background-color:rgb(218, 226, 228);}
@@ -89,7 +90,7 @@ button, input[type="button"], input[type="submit"] {
       color: white;
   }
  
-  
+  /* makes top nav translucent*/
   .navigation-top, .site-footer {
     background-color: rgba(255, 255, 255, 0.63);
 }
@@ -99,7 +100,7 @@ button, input[type="button"], input[type="submit"] {
     border-bottom: 1px solid rgba(0,0,0,0); /* gets rid of border..?*/
     border-top: 1px solid rgba(0,0,0,0);}
 
-/* makes top nav translucent*/
+
     .custom-header {
          position: initial; 
     }
@@ -112,7 +113,7 @@ button, input[type="button"], input[type="submit"] {
     .more-link {
         color: rgb(77, 76, 76);
         text-decoration: none;
-        font-weight: 800;
+        font-weight: 100;
     }
 
 /* edits to get rid of link underlines */
@@ -126,7 +127,7 @@ a:focus {
 
 a:hover,
 a:active {
-	color: #000;
+	color: rgb(255, 253, 253);
 	outline: none;
 }
 
@@ -218,9 +219,47 @@ a:hover .nav-title,
 .widget .widget-title a:hover,
 .widget ul li a:focus,
 .widget ul li a:hover {
-    color: rgb(72, 103, 139);
+    color: rgb(150, 150, 150);
 	-webkit-box-shadow:none;
 	box-shadow: none;
 }
 
 aside#secondary .widget-area {padding: 10px;}
+
+/* below takes off boarder of form inputs*/
+
+input[type="text"],
+ input[type="email"],
+  input[type="url"],
+   input[type="password"],
+    input[type="search"],
+     input[type="number"],
+      input[type="tel"],
+       input[type="range"],
+        input[type="date"],
+         input[type="month"],
+          input[type="week"],
+           input[type="time"],
+            input[type="datetime"],
+             input[type="datetime-local"],
+              input[type="color"]
+               {
+                   border-style: none;
+                   background-color: rgb(243, 242, 242);
+            }
+/* below gives buttons colour edits*/
+
+button, input[type="button"],
+input[type="submit"]
+ {
+               
+    color: rgb(41, 41, 41);
+            
+ }
+
+ /* makes search icon turn white on hover*/
+ button :hover
+  {
+      color: white;
+
+  }
