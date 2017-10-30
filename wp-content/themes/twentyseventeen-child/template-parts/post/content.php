@@ -20,16 +20,6 @@
 	?>
 	<header class="entry-header">
 		<?php
-		if ( 'post' === get_post_type() ) {
-			echo '<div class="entry-meta">';
-				if ( is_single() ) {
-					twentyseventeen_posted_on();
-				} else {
-					echo twentyseventeen_time_link();
-					twentyseventeen_edit_link();
-				};
-			echo '</div><!-- .entry-meta -->';
-		};
 
 		if ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -38,6 +28,10 @@
 		} else {
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		}
+
+	/* took away the date and by author part */ 
+
+	
 		?>
 	</header><!-- .entry-header -->
 
@@ -53,7 +47,7 @@
 		<?php
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
-			__( '...Read More<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+			__( 'Read More<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
 			get_the_title()
 		) );
 
