@@ -69,6 +69,8 @@ button, input[type="button"], input[type="submit"] {
 /* removes Title of page from showing above content */    
     header.page-header {display:none;}
 
+    header.entry-header h1.entry-title, h2.entry-title {visibility:hidden;}
+h2.entry-title a {visibility: visible;}
 
 /* changes done to post title weight, and post view... giving a background colour etc... */
  h2.entry-title 
@@ -77,7 +79,7 @@ button, input[type="button"], input[type="submit"] {
     
     }
 
-/* createsa header banner that runs off the left */
+/* createsa header banner that runs off the left 
     body:not(.twentyseventeen-front-page) .entry-header {
         padding-top: 1%;
         padding-bottom: 0.5%;
@@ -92,7 +94,7 @@ button, input[type="button"], input[type="submit"] {
         text-align: center;
         font-weight: 100;
         color:white;
-    }
+    } */
 
 /* changes site background & media links to tiled background */
 .twentyseventeen-front-page .site-content,
@@ -268,7 +270,8 @@ input[type="text"],
            input[type="time"],
             input[type="datetime"],
              input[type="datetime-local"],
-              input[type="color"]
+              input[type="color"],
+              textarea
                {
                    border-style: none;
                    background-color: rgb(243, 242, 242);
@@ -289,3 +292,6 @@ input[type="submit"]
       color: white;
 
   }
+
+
+  hr {display:none;}
